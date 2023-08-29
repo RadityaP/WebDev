@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
+}
+
+code {
+    white-space: pre;
+  }
+
+
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 2.5%;
+    border-radius: 20px;
+    border-color: orange;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;  /* Adjust spacing between the image and the counter */
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+span {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.counter img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 5px; /* Adjust spacing between image and its description */
+}
+
+.counter p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.ATC{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+.add-to-cart-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px; /* Adjust the padding for width */
+    width: auto; /* Let the width adjust based on content */
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Prevent text from wrapping to new lines */
+
+}
+
+.add-to-cart-button:hover {
+    background-color: rgb(227, 221, 221); /* Darker shade on hover */
+    
+    color: orange;
+}
+
+.slide-effect {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    width: 66.66vw; /* 2/3rd of viewport width */
+    height: 100%; /* 2/3rd of viewport height */
+    background-color: orange;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    display: none; /* Hidden by default */
+}
+
+.inner-rectangle {
+    width: 90%; /* 90% of the parent's width */
+    height: 90%; /* 90% of the parent's height */
+    background-color: white;
+    margin: 5%; /* 5% margin on all sides */
+    border-radius: 8px; /* Adjust the radius as needed */
+    position: relative;
+}
+
+.inner-rectangle p {
+    margin-left: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.orange-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 20px;
+    background-color: orange;
+}
