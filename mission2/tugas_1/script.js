@@ -25,7 +25,6 @@ function updateDisplay(index) {
 
 cartButton.addEventListener("click", () => {
     addToCart();
-    
     updateCounterDisplay();
     const line = "--------------------------------"
     slideEffect.style.display = "block"; // Show the slide effect
