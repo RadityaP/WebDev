@@ -8,7 +8,7 @@ export default class Player{
     jumpInProgress= false;
     falling = false;
     JUMP_SPEED = 4.5;
-    GRAVITY = 3.75
+    GRAVITY = 4.75
 
     constructor(ctx,width,height,minJumpHeight,maxJumpHeight,scaleRatio)
     {
@@ -80,6 +80,9 @@ export default class Player{
     update(gameSpeed,frameTimeDelta){
         console.log(this.jumpPressed)
         this.run(gameSpeed,frameTimeDelta)
+        if (this.jumpInProgress) {
+            this.image = this.runImages[0]
+        }
         this.jump(gameSpeed,frameTimeDelta)
     }
 
